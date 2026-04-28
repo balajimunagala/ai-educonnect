@@ -14,6 +14,10 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/courses', require('./routes/courseRoutes'));
+// Register AI routes
+app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/courses', require('./routes/courseRoutes'));
+app.use('/api/ai', require('./routes/aiRoutes'));  
 
 // Test route
 app.get('/', (req, res) => {
