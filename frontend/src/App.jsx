@@ -8,6 +8,7 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import CoursePage from './pages/CoursePage'
 import QuizPage from './pages/QuizPage'
+import LearningPath from './pages/LearningPath'
 
 function App() {
   return (
@@ -26,6 +27,13 @@ function App() {
           } />
           <Route path="/quiz/:id" element={
             <ProtectedRoute><QuizPage /></ProtectedRoute>
+          } />
+          <Route path="/learning-path" element={
+            <ProtectedRoute><LearningPath /></ProtectedRoute>
+          } />
+          {/* Browse Courses reuses CoursePage as a listing */}
+          <Route path="/courses" element={
+            <ProtectedRoute><CoursePage /></ProtectedRoute>
           } />
         </Routes>
       </AuthProvider>
