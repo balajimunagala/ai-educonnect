@@ -74,11 +74,11 @@ const Dashboard = () => {
             {/* Learning Path */}
                 <Link
                 to="/learning-path"
-                className="bg-green-600/10 border border-green-500/20 hover:border-green-500/60 rounded-xl p-4 transition group block"
-                >
-                <div className="text-2xl mb-2">🗺️</div>
-                <h3 className="font-semibold group-hover:text-green-400 transition">Learning Path</h3>
-                <p className="text-gray-400 text-sm mt-1">Get a personalized study plan</p>
+                  className="bg-green-600/10 border border-green-500/20 hover:border-green-500/60 rounded-xl p-4 transition group block"
+                  >
+                  <div className="text-2xl mb-2">🗺️</div>
+                  <h3 className="font-semibold group-hover:text-green-400 transition">Learning Path</h3>
+                  <p className="text-gray-400 text-sm mt-1">AI builds your personalized roadmap</p>
                 </Link>
 
                 {/* Browse Courses */}
